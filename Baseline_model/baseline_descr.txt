@@ -1,0 +1,7 @@
+Setup parameters: 
+
+- Default sklearn.linear_model.LogisticRegression
+- Words individually encoded to columns in tensor. 
+- Sentences encoded to rows in tensor. 
+- Training data is divided in batches of 5000 sentences per batch. 
+- Test data is divided into batches of 2499 sentences per batch. 
