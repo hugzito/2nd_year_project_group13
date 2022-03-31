@@ -168,8 +168,8 @@ print('Finished Training')
 
 embeds = cbow.state_dict()['embeddings.weight']
 outFile = open('embeds.txt', 'w')
-outFile.write(str(len(idx2word)) + ' ' + str(embed_dim) + '\n')
-for word, embed in zip(idx2word, embeds):
+outFile.write(str(len(train_data['inverse_vocab'])) + ' ' + str(embed_dim) + '\n')
+for word, embed in zip(train_data['inverse_vocab'], embeds):
     outFile.write(word + ' ' + ' '.join([str(x) for x in embed.tolist()]) + '\n')
 outFile.close()
 
