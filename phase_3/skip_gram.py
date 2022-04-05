@@ -118,6 +118,40 @@ paths = {'train':'../classification/music_reviews_train.json.gz',
         'dev' : '../classification/music_reviews_dev.json.gz'}
 embed_dim = 64
 
+# setting up tokenizer, train and dev data
+tokenizer = TweetTokenizer()
+train_data = sen_vectorizer(paths['train'], cutoff = 100)
+train_matrix = create_onehot(train_data['vocabulary'], train_data['sentences'], TweetTokenizer)
+
+def rob_skipgram(tokenized_sents, tokenizer, word2idx, window_size):
+    PAD = '<PAD>'
+    fullData = []
+    labels = []
+    for sent in tokenized_sents:
+        for tgtIdx in range(len(tokenized_sents[sent])):
+            labels.append(word2idx[tokenized_sents[sent][tgtIdx]])
+            dataLine = []
+            # backwards
+            for dist in reversed(range(1,window_size+1)):
+                srcIdx = tgtIdx - dist
+                if srcIdx < 0:
+                    dataLine.append(word2idx[PAD])
+                else:
+                    dataLine.append(word2idx[tokenized_sents[sent][srcIdx]])
+            # forwards
+            for dist in range(1,window_size+1):
+                srcIdx = tgtIdx + dist
+                if srcIdx >= len(tokenized_sents[sent]):
+                    dataLine.append(word2idx[PAD])
+                else:
+                    dataLine.append(word2idx[tokenized_sents[sent][srcIdx]])
+            fullData.append(dataLine)
+    return fullData, labels
+
+data, labels = rob_skipgram(train_data['sentences'], tokenizer, train_data['vocabulary'], 2)
+labels = torch.tensor(labels)
+data = torch.tensor(data)
+
 class CBOW(nn.Module):
     def __init__(self, emb_dim, vocab_dim):
         super(CBOW, self).__init__()
