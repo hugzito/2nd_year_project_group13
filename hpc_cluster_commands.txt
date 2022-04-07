@@ -1,0 +1,11 @@
+How to connect to the hpc cluster from ubuntu terminal:
+ssh user@hpc.itu.dk
+(replace user with your ITU username)
+After that line you will have to write your ITU password in to login
+
+Creating a directory for our project:
+mkdir projectname
+
+change directory to project:
+cd projectname
+
