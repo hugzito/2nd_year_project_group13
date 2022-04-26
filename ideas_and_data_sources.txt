@@ -10,43 +10,43 @@ on all sources and see if it performs better.
 
 LINKS FOR DATA SOURCES
 
-Coronavirus tweets NLP - Text Classification (negative/positive/other sentiment):
+Coronavirus tweets NLP - Text Classification (negative/positive/other sentiment): APPROVED
 https://www.kaggle.com/datasets/datatattle/covid-19-nlp-text-classification
 
-TripAdviser hotel reviews (star reviews 1-5):
-https://www.kaggle.com/datasets/andrewmvd/trip-advisor-hotel-reviews
+TripAdviser hotel reviews (star reviews 1-5): NOT APPROVED
+https://www.kaggle.com/datasets/andrewmvd/trip-advisor-hotel-reviews 
 
-Amazon Alexa Reviews (star reviews 1-5):
+Amazon Alexa Reviews (star reviews 1-5): IDK, COULD WORK
 https://www.kaggle.com/datasets/sid321axn/amazon-alexa-reviews
 
-Women's E-Commerce Clothing Reviews (star reviews 1-5):
+Women's E-Commerce Clothing Reviews (star reviews 1-5): APPROVED
 https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews
 
-Emotions dataset for NLP (different emotions, could maybe alter to just positive/negative emotions):
+Emotions dataset for NLP (different emotions, could maybe alter to just positive/negative emotions): APPROVED
 https://www.kaggle.com/datasets/praveengovi/emotions-dataset-for-nlp
 
-Sentimental Analysis for Tweets (0/1 for "not depression" and "depression"):
+Sentimental Analysis for Tweets (0/1 for "not depression" and "depression"): APPROVED
 https://www.kaggle.com/datasets/gargmanas/sentimental-analysis-for-tweets
 
-Amazon reviews (1-5 stars where 1/2 are negative and 4/5 are positive):
-https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews
+Amazon reviews (1-5 stars where 1/2 are negative and 4/5 are positive): APPROVED
+https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews 
 
-Twitter Sentiment Analysis (positive/negative also multi-lingingual):
+Twitter Sentiment Analysis (positive/negative also multi-lingingual): NOT APPROVED
 https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis
 
-Financial Sentiment Analysis (positive/negative, pretty ideal):
+Financial Sentiment Analysis (positive/negative, pretty ideal): APPROVED
 https://www.kaggle.com/datasets/sbhatti/financial-sentiment-analysis
 
-IMDB 50K Movie Reviews (TEST your BERT) (positive/negative, pretty ideal):
+IMDB 50K Movie Reviews (TEST your BERT) (positive/negative, pretty ideal): APPROVED
 https://www.kaggle.com/datasets/atulanandjha/imdb-50k-movie-reviews-test-your-bert
 
-IMDB Movie Ratings Sentiment Analysis (positive/negative, very similar to above):
+IMDB Movie Ratings Sentiment Analysis (positive/negative, very similar to above): APPROVED
 https://www.kaggle.com/datasets/yasserh/imdb-movie-ratings-sentiment-analysis
 
 Steam Game Review Dataset (recommend/not recommend):
 https://www.kaggle.com/datasets/arashnic/game-review-dataset
 
-Bag of Words Meets Bags of Popcorn (IMBD reviews positive/negative):
+Bag of Words Meets Bags of Popcorn (IMBD reviews positive/negative): APPROVED
 https://www.kaggle.com/datasets/ymanojkumar023/kumarmanoj-bag-of-words-meets-bags-of-popcorn
 
 
