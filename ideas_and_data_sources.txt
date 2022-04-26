@@ -54,3 +54,5 @@ https://www.kaggle.com/datasets/ymanojkumar023/kumarmanoj-bag-of-words-meets-bag
 NEED TO DECIDE:
  - Should we only take datasets already in positive/negative format or should we also use datasets
 with star reviews and fx if it ranges from 1-5, say 1/2 is negative, 4/5 is positive and ignore 3?
+
+What is BERT? (Bidirectional Encoder Representations from Transformers)
