@@ -50,9 +50,19 @@ Bag of Words Meets Bags of Popcorn (IMBD reviews positive/negative): APPROVED
 https://www.kaggle.com/datasets/ymanojkumar023/kumarmanoj-bag-of-words-meets-bags-of-popcorn
 
 
+Current domains and their filenames:
+ - twitter: cleaned_covid.csv, twitter.csv
+ - news: cleaned_gold.csv
+ - amazon? reviews: cleaned_kindle.csv
+ - IMDB: imdb.csv
+ - reddit: reddit.csv
 
-NEED TO DECIDE:
- - Should we only take datasets already in positive/negative format or should we also use datasets
-with star reviews and fx if it ranges from 1-5, say 1/2 is negative, 4/5 is positive and ignore 3?
-
-What is BERT? (Bidirectional Encoder Representations from Transformers)
+TODO:
+ - Validation Train different LSTM's on each domain source (IMDB, reddit, etc.) and save them to a 
+folder
+ - Print performance measured of the models on all other domains (how does IMDB trained model perform 
+on all other domains?)
+ - Using performance of these models, decide amount of each domain should be present in the final 
+compiled data
+ - Test this model and compare its performance to an LSTM trained on all datasets, and an LSTM trained
+on a an amount of data where each domain contributes equally
